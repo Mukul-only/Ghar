@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    padding:0 20%;
+}
+a{
+    text-decoration: none;
+
+}
+
+
+                                        /* MAIN NAV BAR */
+nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(45deg,#85182a,#e01e37);
+    color:white;
+}
+.nav-font{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.brand-box{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+.brand{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.ol{
+    display:flex;
+    margin:10px 0;
+
+}
+.li{
+    display: flex;
+}
+
+.sig{
+    border-radius: 8px;
+    background-color: #fdfdff;
+    padding:8px 15px;
+    transition: background-color 400ms ;
+}
+.sig:hover{
+    background-color: #f2f2f2;
+}
+.log{
+    padding:8px 10px;
+    color:white;
+    
+}
+.log:hover{
+    text-decoration: underline;
+}
+
+
+
+                                /* NAV BAR END */
+
+
+.Head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.Head h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    background-image: linear-gradient(45deg,#ff0a54 44%,#ff5c8a 60%);
+    -webkit-background-clip:text;
+    font-size: 3rem;
+    background-clip:text;
+    color:transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
+
+}
+.Head p{
+    color:#5d5d5d;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    width:100%;
+    gap:10px;
+}
+.search{
+    width:60%;
+    padding:8px 15px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+   
+}
+input[type="submit"]{
+    padding:8px 15px;   
+    border:none;
+    font-size:1.1rem;
+    background-color: #da1e37;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:5px;
+    color:white;
+    font-weight: 600;
+
+}
