@@ -24,7 +24,7 @@ app.post("/result",(req,res)=>{
 });
 
 app.listen('3000',()=>{
-    console.log("server running at port 3000");
+    console.log(`listning on port ${PORT}`);
 });
 
 
