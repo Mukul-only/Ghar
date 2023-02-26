@@ -1,130 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
-.wrapper{
-    padding:0 20%;
+.wrapper {
+  padding: 0 20%;
 }
-a{
-    text-decoration: none;
-
+a {
+  text-decoration: none;
+  
 }
-
-
-                                        /* MAIN NAV BAR */
-nav{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100vw;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(45deg,#85182a,#e01e37);
-    color:white;
-}
-.nav-font{
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-.brand-box{
-    display: flex;
-    gap:50px;
-    align-items: center;
-}
-.brand{
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.top-margin {
+  margin-top: 150px;
 }
 
-.ol{
-    display:flex;
-    margin:10px 0;
+/* MAIN NAV BAR */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(45deg, #85182a, #e01e37);
+  color: white;
+}
+.nav-font {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.brand-box {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.brand a{
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color:white;
+}
 
+.ol {
+  display: flex;
+  margin: 10px 0;
 }
-.li{
-    display: flex;
+.li {
+  display: flex;
 }
 
-.sig{
-    border-radius: 8px;
-    background-color: #fdfdff;
-    padding:8px 15px;
-    transition: background-color 400ms ;
+.sig {
+  border-radius: 8px;
+  background-color: #fdfdff;
+  padding: 8px 15px;
+  transition: background-color 400ms;
 }
-.sig:hover{
-    background-color: #f2f2f2;
+.sig:hover {
+  background-color: #f2f2f2;
 }
-.log{
-    padding:8px 10px;
-    color:white;
+.log {
+  padding: 8px 10px;
+  color: white;
+}
+.log:hover {
+  text-decoration: underline;
+}
+
+/* NAV BAR END */
+
+.Head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.Head h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  background-image: linear-gradient(45deg, #ff0a54 44%, #c9184a 60%);
+  -webkit-background-clip: text;
+  font-size: 3rem;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
+}
+.Head p {
+  color: #5d5d5d;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  gap: 10px;
+}
+.search {
+  width: 60%;
+  padding: 8px 15px;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+input[type="submit"] {
+  padding: 8px 15px;
+  border: none;
+  font-size: 1.1rem;
+  background-color: #da1e37;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+/* resuls page */
+
+.results {
+  margin-inline: 20%;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.areas-label {
+  display: flex;
+
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+}
+.areas-label i {
+  padding-top: 20px;
+}
+
+.sub-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: #494949;
+  height: 100%;
+}
+
+.results .image {
+  width: 300px;
+  height: 200px;
+  background-image: url("/assets/house.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.31)
+  );
+}
+
+.distance {
+  color: #1eda2e;
+}
+
+.km {
+  background-color: #da1e37;
+  color: white;
+  padding: 8px 10px;
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  position: relative;
+  isolation: isolate;
+}
+.km:hover {
+  text-decoration: underline;
+}
+
+/* search bar */
+
+.serch-bar {
+  margin-bottom: 40px;
+}
+.search-result {
+  width: 80%;
+  padding: 8px 20px;
+  font-size: 1rem;
+}
+.s-b{
+    background-color:#ba181b;
     
-}
-.log:hover{
-    text-decoration: underline;
-}
-
-
-
-                                /* NAV BAR END */
-
-
-.Head{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-}
-.Head h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    background-image: linear-gradient(45deg,#ff0a54 44%,#ff5c8a 60%);
-    -webkit-background-clip:text;
-    font-size: 3rem;
-    background-clip:text;
-    color:transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.222);
-
-}
-.Head p{
-    color:#5d5d5d;
-    letter-spacing: 2px;
-    font-size: 1.1rem;
-    
-}
-
-form{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:30px;
-    width:100%;
-    gap:10px;
-}
-.search{
-    width:60%;
-    padding:8px 15px;
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-   
-}
-input[type="submit"]{
-    padding:8px 15px;   
-    border:none;
-    font-size:1.1rem;
-    background-color: #da1e37;
-    font-family: 'Montserrat', sans-serif;
-    border-radius:5px;
+    border:0;
+    padding :10px 15px;
     color:white;
-    font-weight: 600;
+    border-radius:6px;
+    cursor:pointer;
 
+}
+.s-b:hover{
+    background-color: #de1e22;
+}
+.found-msg{
+    font-size:1.5rem;
+    font-weight:600;
+    margin-bottom:20px;
 }
